@@ -1,0 +1,14 @@
+<p class="fw-bold results-line">Results: {{ count }}</p>
+<div *ngIf="isLoading" class="d-flex justify-content-center">
+  <app-loader></app-loader>
+</div>
+<h3 *ngIf="isLoadError" class="text-center text-danger">{{isLoadError}}</h3>
+<div *ngIf="!isLoading && !isLoadError" class="row">
+  <div class="col-lg-4 col-md-6" *ngFor="let item of articleResults">
+    <app-result-item [article]="item"></app-result-item>
+  </div>
+</div>
+<div class="buttons">
+  <button *ngIf="previousPage" class="btn btn-primary" type="button" (click)="onClickPrevious()">Previous</button>
+  <button *ngIf="nextPage" class="btn btn-primary" type="button" (click)="onClickNext()">Next</button>
+</div>

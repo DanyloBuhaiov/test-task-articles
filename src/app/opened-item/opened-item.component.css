@@ -1,0 +1,54 @@
+h1 {
+  margin: 100px;
+}
+
+.image-div {
+  width: 100vw;
+  height: 245px;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: -10;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+.info {
+  margin: 150px 100px 0;
+  padding: 35px 75px 50px 75px;
+  border-radius: 5px;
+  background: linear-gradient(0deg, #EAEAEA, #EAEAEA), linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 8px 24px 0px #0000000D;
+}
+
+.item-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: center;
+  padding: 10px 0 50px;
+}
+
+.item-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.item-back {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  cursor: pointer;
+  margin: 20px 0 0 150px;
+}

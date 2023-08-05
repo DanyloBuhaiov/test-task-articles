@@ -1,0 +1,15 @@
+<h1 *ngIf="!article && !isLoading" class="text-center">Article not found!</h1>
+<div *ngIf="isLoading" class="d-flex justify-content-center">
+  <app-loader></app-loader>
+</div>
+<h3 *ngIf="isLoadError" class="text-center text-danger">{{isLoadError}}</h3>
+<div *ngIf="article">
+  <div class="image-div">
+    <img class="image" [src]="article.image_url" [alt]="article.id">
+  </div>
+  <div class="info">
+    <h2 class="item-title">{{ article.title }}</h2>
+    <p class="item-description">{{ article.summary }}</p>
+  </div>
+</div>
+<div class="item-back" (click)="onClickBackHome()">← Back to homepage</div>

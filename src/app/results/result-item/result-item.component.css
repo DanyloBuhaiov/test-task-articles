@@ -1,0 +1,77 @@
+.item {
+  height: 530px;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 8px 24px 0px #0000000D;
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.image-container {
+  width: 100%;
+  height: 217px;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+}
+
+.item-info {
+  padding: 25px;
+}
+
+.date {
+  height: 21px;
+  opacity: 0.6;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  margin-top: 10px;
+}
+
+.calendar {
+  width: 16px;
+  height: 16px;
+  padding: 1px;
+  opacity: 0.6;
+  margin: 0 10px 4px 0;
+}
+
+.item-title {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  margin: 20px 0;
+}
+
+.item-description {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  max-height: 70px;
+  white-space: wrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.item-continue {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+}
+
+::ng-deep .highlighted-text{
+  background-color: yellow;
+}

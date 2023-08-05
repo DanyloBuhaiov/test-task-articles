@@ -1,0 +1,14 @@
+<div class="item">
+  <div class="image-container">
+    <img class="image" [src]="article.image_url" [alt]="article.id">
+  </div>
+  <div class="item-info">
+    <div class="date">
+      <img class="calendar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Gez2mFV2Qer2m95Gm6sLh7YUpB04DaC6pA&usqp=CAU" alt="c">
+      <span>{{ article.published_at | date:'mediumDate' }}</span>
+    </div>
+    <div class="item-title" [innerHtml]="article.title | selectWords:inputValue"></div>
+    <p class="item-description" [innerHtml]="article.summary | strLength:100 | selectWords:inputValue"></p>
+    <div class="item-continue" (click)="onClickReadMore()">Read more →</div>
+  </div>
+</div>
