@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomePageComponent } from './home-page/home-page.component';
 import { SelectWordsPipe } from './pipes/select-words.pipe';
 import { FormsModule } from '@angular/forms';
+import { ErrorComponent } from './error/error.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormsModule } from '@angular/forms';
     StrLengthPipe,
     OpenedItemComponent,
     HomePageComponent,
-    SelectWordsPipe
+    SelectWordsPipe,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
